@@ -1,0 +1,61 @@
+name: KayjiAemCao
+version: 1.0.0
+main: me.kayji.aemcao.KayjiAemCaoPlugin
+api-version: '1.21'
+author: Kayji
+softdepend: [LuckPerms, Essentials, EssentialsX, CMI, HuskHomes, AdvancedTeleport]
+
+commands:
+  tpa:
+    description: Gui yeu cau dich chuyen den nguoi choi
+    usage: /tpa <player>
+  tpahere:
+    description: Moi nguoi choi dich chuyen den ban
+    usage: /tpahere <player>
+  tpaccept:
+    description: Chap nhan yeu cau dich chuyen
+    usage: /tpaccept [player]
+  tpdeny:
+    description: Tu choi yeu cau dich chuyen
+    usage: /tpdeny [player]
+  tpacancel:
+    description: Huy yeu cau dich chuyen da gui
+    usage: /tpacancel [player]
+  home:
+    description: Mo home GUI hoac dich chuyen den home
+    usage: /home [name]
+  sethome:
+    description: Dat home
+    usage: /sethome <name>
+  delhome:
+    description: Xoa home
+    usage: /delhome <name>
+  homes:
+    description: Mo danh sach home
+    usage: /homes
+  back:
+    description: Quay lai vi tri vua chet
+    usage: /back
+  aemcao:
+    description: Quan ly Kayji-aemcao
+    usage: /aemcao reload
+
+permissions:
+  kayjiaemcao.admin:
+    default: op
+  kayjiaemcao.tpa:
+    default: true
+  kayjiaemcao.tpahere:
+    default: true
+  kayjiaemcao.home:
+    default: true
+  kayjiaemcao.sethome:
+    default: true
+  kayjiaemcao.delhome:
+    default: true
+  kayjiaemcao.back:
+    default: true
+  kayjiaemcao.bypass.delay:
+    default: op
+  kayjiaemcao.bypass.move-cancel:
+    default: op

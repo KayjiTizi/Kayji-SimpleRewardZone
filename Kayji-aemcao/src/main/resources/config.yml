@@ -1,0 +1,35 @@
+settings:
+  teleport-delay-seconds: 3
+  cancel-on-move: true
+  move-cancel-distance: 0.15
+  tpa-expire-seconds: 30
+  save-interval-seconds: 120
+
+conflict-protection:
+  enabled: true
+  take-over-other-plugin-commands: true
+  tpa-plugins: [Essentials, EssentialsX, CMI, AdvancedTeleport]
+  home-plugins: [Essentials, EssentialsX, CMI, HuskHomes]
+  back-plugins: [Essentials, EssentialsX, CMI, HuskHomes]
+  tpa-commands: [tpa, tpahere, tpaccept, tpdeny, tpacancel]
+  home-commands: [home, homes, sethome, delhome]
+  back-commands: [back]
+
+homes:
+  default-limit: 3
+  permission-limits:
+    kayjiaemcao.homes.5: 5
+    kayjiaemcao.homes.10: 10
+    kayjiaemcao.homes.vip: 15
+    kayjiaemcao.homes.admin: 100
+
+back:
+  only-after-death: true
+  clear-after-use: false
+
+gui:
+  home-title: '#D473EF✦ Danh sách Home'
+  filler: PURPLE_STAINED_GLASS_PANE
+  safe-icon: LIME_BED
+  unsafe-icon: RED_BED
+  info-icon: BOOK

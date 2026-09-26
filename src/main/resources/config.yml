@@ -1,0 +1,88 @@
+settings:
+  world: world
+  auto-spawn: true
+  spawn-interval-minutes: 60
+  pre-announce-seconds: 30
+  despawn-minutes: 60
+  announce-coordinates: true
+  replace-active-drop: false
+  spawn-template-mode: random
+  spawn-template-id: default
+
+spawn-area:
+  min-x: -1000
+  max-x: 1000
+  min-z: -1000
+  max-z: 1000
+  max-random-attempts: 80
+  load-unloaded-chunks: false
+
+pvp-zone:
+  enabled: true
+  radius: 18
+  enter-message: '&8○ #F08EC8Bạn đã vào khu vực PvP của rương thính.'
+  leave-message: '&8○ #8EDFD1Bạn đã rời khu vực PvP của rương thính.'
+
+effects:
+  upcoming-sound: BLOCK_NOTE_BLOCK_PLING
+  spawn-sound: ENTITY_ENDER_DRAGON_GROWL
+  claim-sound: UI_TOAST_CHALLENGE_COMPLETE
+  fireworks: 4
+
+beacon-beam:
+  enabled: true
+  offset-x: 2
+  offset-z: 0
+  hidden-depth: 3
+  clear-above-chest: 2
+  base-block: GOLD_BLOCK
+  glass: YELLOW_STAINED_GLASS
+
+hologram:
+  enabled: true
+  height: 1.55
+  line-spacing: 0.34
+  visibility-distance: 96
+  text-shadow: true
+  see-through: false
+  lines:
+    - '#D473EFRương thính'
+    - '#B9A7F5Chuột phải để nhận quà'
+    - '#F0C987PvP: #8EDFD1{radius} block'
+    - '#F0C987Biến mất sau: #8EDFD1{time}'
+
+messages:
+  prefix: '&8○ #D473EFKayjiReward #B9A7F5'
+  no-permission: '&8○ #F07B93Bạn không có quyền dùng lệnh này.'
+  player-only: '&8○ #F07B93Lệnh này chỉ dùng trong game.'
+  reloaded: '&8○ #8EDFD1Đã tải lại config và data.'
+  no-template: '&8○ #F0C987Chưa có rương thính nào trong data.'
+  spawn-failed: '&8○ #F07B93Không tìm được vị trí phù hợp để thả rương.'
+  upcoming-chat:
+    - ''
+    - '&8○ #D473EFChuẩn bị có rương thính rơi.'
+    - '&8○ #F0C987Sau #8EDFD1{seconds} giây #F0C987nữa tọa độ sẽ được công bố.'
+    - ''
+  upcoming-title: '#D473EFSắp có thính rơi'
+  upcoming-subtitle: '#F0C987Còn {seconds} giây'
+  spawned-chat:
+    - ''
+    - '&8○ #D473EFMột rương thính vừa xuất hiện.'
+    - '&8○ #B9A7F5World: #F0C987{world} #B9A7F5X: #F0C987{x} #B9A7F5Y: #F0C987{y} #B9A7F5Z: #F0C987{z}'
+    - '&8○ #8EDFD1Trong vòng quanh rương có thể PvP.'
+    - ''
+  spawned-title: '#D473EFRương thính xuất hiện'
+  spawned-subtitle: '#F0C987X {x}  Y {y}  Z {z}'
+  claimed-chat:
+    - ''
+    - '&8○ #8EDFD1{player} #B9A7F5đã nhặt được rương thính.'
+    - ''
+  claimed-title: '#8EDFD1Đã có người nhận rương'
+  claimed-subtitle: '#F0C987{player}'
+  despawned: '&8○ #F0C987Rương thính đã biến mất vì quá thời gian.'
+
+gui:
+  main-title: '#D473EFQuan ly ruong thinh'
+  templates-title: '#D473EFDanh sach ruong'
+  editor-title-prefix: '#D473EFSua ruong: '
+  settings-title: '#D473EFCai dat'
